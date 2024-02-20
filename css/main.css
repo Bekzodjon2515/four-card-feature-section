@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: 200,400,600&display-swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAFAFA;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header {
+    margin: 50px auto;
+    max-width: 400px;
+    text-align: center;
+
+}
+
+h1 {
+    font-weight: 600;
+    margin: 0;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1140px;
+
+}
+
+.box {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.50);
+    border-radius: 8px;
+    padding: 30px;
+    overflow: hidden;
+    margin: 15px;
+    width: 350px;
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+
+}
+
+.box-cyan::after {
+    background-color: #44D3D2;
+
+}
+
+.box-red::after {
+    background-color: #EA5454;
+}
+
+.box-blue::after {
+    background-color: #549EF2;
+}
+
+.box-orange::after {
+    background-color: #FCAE4A;
+}
+
+.box-push {
+    transform: translateY(50%);
+
+}
+
+.box h2{
+    margin: 0;
+}
+
+.box:hover h2.box-cyan{
+    color: #44D3D2;
+}
+
+
+.box:hover  h2.box-red{
+    color: #EA5454;
+}
+
+.box:hover h2.box-push{
+    color: #549EF2;
+}
+
+
+.box:hover h2.box-orange{
+    color: #FCAE4A;
+}
+
+.box p{
+    font-size: 14px;
+    margin: 15px 0 10px;
+
+}
+
+.box:hover p{
+    color: #4D4F62;
+}
+
+.box img{
+    display: block;
+    margin-left: auto;
+
+}
+
+.box:hover img{
+    transform: scale(1.1);
+    
+}
+
+
+@media (max-width: 775px) {
+
+    .box-push{
+        transform: translateY(0);
+    }
+    
+}
